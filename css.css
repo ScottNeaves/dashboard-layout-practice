@@ -1,0 +1,276 @@
+* {margin:0;padding:0;border:0; box-sizing:border-box; font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;}
+input[type=checkbox]{visibility:hidden;}
+html{height:100%;} /*Makes it so that you can specify height as a percentage in elements which have html as an ancestor.*/
+body{text-align:center; padding:2%; background:#B8E6E6; height:100%;}
+#content-box{display:inline-block; width:100%; height:100%;}
+.col{float:left; width:33%; height:600px; min-width: 430px;} /*float all three columns left*/
+.widget{margin:40px 30px; background:white;} /*put some space around all the widgets*/
+
+/* first column: */
+#add-new-post{height:70%; position:relative;}
+#action-bar{height:10%; position:relative;}
+#subscribe{height:20%; position:relative; }
+
+/* second column: */
+#related-posts{height:40%; position:relative; }
+#tags{height:20%; position:relative;}
+#map{height:40%; position:relative;}
+
+/* third column: */
+#calendar{height:250px; background:#B8E6E6; position:relative;}
+#recent-posts{height:10%; position:relative; background:gray;}
+#categories{height:10%; position:relative; background:gray;}
+#pop-com-recent{height:30%; position:relative;}
+
+
+/*---------------------------------- ADD-NEW-POST -------------------------------------*/
+/* Tabs in the add-new-post widget */
+.tabs{float:left; height:100%; width:20%; background:black; color:gray;}
+.tabs ul {height:100%; list-style:none; width:100%; }
+.tabs ul li {
+	width:100%;
+	min-height:60px;
+	position:relative;
+}
+
+.vh-center {
+	display:table;
+	min-height: 60px;
+}
+
+.vh-center p {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	min-height: 60px;
+}
+
+.tabbed-content-container{
+	position: relative;
+	text-align: left;
+	float:left;
+    width:80%;
+    height: 100%;
+    background: white;
+    overflow-y:auto;
+}
+
+.tabbed-content {
+	position:absolute;
+	margin: 10%;
+}
+/*---------------------------------- end ADD-NEW-POST -------------------------------------*/
+
+
+/*---------------------------------- ACTION-BAR -------------------------------------*/
+.icon {display:inline-block; float:left; height:100%; width:13%;}
+.icon img {height:40px; width:40px; vertical-align:middle;}
+.helper {display:inline-block; height:100%; vertical-align:middle;}
+#search{float:left; height:100%; width:61%; padding:10px; padding-top: 16px;}
+#search input {border:1px solid black; display:inline-block; vertical-align:middle; width:100%; height:80%; padding-left: 35px;  background:white url(http://i.imgur.com/lFkqn.png) left center no-repeat;}
+/*---------------------------------- end ACTION-BAR -------------------------------------*/
+
+/*---------------------------------- SUBSCRIBE -------------------------------------*/
+.title {background:black; text-align:left; height:50px; color:#DDDDDD; padding-left: 15px; font-size: 80%; line-height: 50px; position:absolute; width:100%;}
+.subscribe-form{height:100%; text-align: left; padding-top: 50px;}
+.subscribe-form form {height:100%; width:100%; padding: 10px; text-align: center; display: table;}
+.subscribe-form form p {height:100%; width:100%; display:table-cell; vertical-align: middle;}
+.subscribe-form form p input {height:60%;}
+.subscribe-form .email_txt_field {width:75%; border:1px solid black; padding-left: 6px; letter-spacing: 1px;}
+.subscribe-form .email_submit_btn {width: 20%; font-weight: bold; background: #FF6666; color:white; letter-spacing: 1px;}
+.subscribe-form .subscribe-cta {position:absolute; top:55px; left:22px;}
+/*---------------------------------- end SUBSCRIBE -------------------------------------*/
+
+
+/*.title h1 {position:relative; top:50%; transform:translateY(-50%);} this is a good way to vertically center text which doesn't have a parent with fixed height.*/ 
+
+
+/*---------------------------------- RELATED-POSTS -------------------------------------*/
+.checkbox-item{color:#FF6666; text-align:left; padding: 0 10px; height:33.333%;}
+.checkbox-item:hover {background: #EEEEEE}
+.checkbox-item-container{height:100%; padding-top: 50px;}
+.checkbox-item .text-container{float:left;}
+.checkbox-item .checkbox-container {width:25px; margin: 20px, 100px; position:relative; float:right; margin:10px;}
+.checkbox-item .checkbox-container label {
+	cursor: pointer; 
+	position: absolute; 
+	width: 25px; 
+	height:25px; 
+	top:0; 
+	left:0; 
+	background: white; 
+	border: 1px solid #ddd;
+
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 3px 1px #626262;
+
+}
+.checkbox-item .checkbox-container label:after {
+	opacity:0; 
+	content:''; 
+	position:absolute; 
+	width:9px; 
+	height:5px; 
+	background: transparent; 
+	top:6px; 
+	left:7px; 
+	border: 3px solid #00CC00;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.checkbox-item .checkbox-container label:hover::after {
+	opacity: 0.5;
+}
+.checkbox-item .checkbox-container input[type=checkbox]:checked + label:after{
+	opacity: 1;
+}
+/*---------------------------------- end RELATED-POSTS -------------------------------------*/
+
+/*---------------------------------- TAGS -------------------------------------*/
+.subscribe-form .tag-subtext {position:absolute; top:100px; left:22px;}
+/*---------------------------------- end TAGS -------------------------------------*/
+
+/*---------------------------------- MAP -------------------------------------------*/
+#map-canvas{position: absolute; height: 175px; width:100%; padding:0;}
+#map .subscribe-form {padding-top: 175px;}
+#map .subscribe-form input[type="email"] {background:white url(http://i.imgur.com/lFkqn.png) left center no-repeat; padding-left: 30px;}
+/*---------------------------------- end MAP -------------------------------------------*/
+
+/*----------------------------------- CALENDAR -------------------------------------------*/
+.container {
+  margin: 50px auto;
+  width: 300px;
+  background: #FF6666;
+}
+.container .cal {
+  margin: 0;
+}
+
+.cal {
+  display: block;
+  width: 300px;
+}
+.cal a {
+  text-decoration: none;
+}
+.cal caption {
+  display: block;
+  line-height: 42.8px;
+  font-weight: bold;
+  color: #DDDDDD;
+  text-align: center;
+  text-shadow: 0 -1px black;
+  background: #333;
+  background: black;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #313131;
+}
+.cal caption a {
+  display: block;
+  line-height: 42.8px;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #DDDDDD;
+}
+.cal caption a:hover {
+  color: white;
+}
+.cal caption .prev {
+  float: left;
+}
+.cal caption .next {
+  float: right;
+}
+.cal th, .cal td {
+  width: 42.8px;
+  text-align: center;
+}
+.cal th:first-child, .cal td:first-child {
+  border-left: 0;
+}
+.cal th {
+  line-height: 20px;
+  font-size: 15px;
+  color: white;
+  border-left: 1px solid #f3f3f3;
+}
+.cal td {
+  font-size: 17px;
+  font-weight: normal;
+}
+.cal td a {
+  clear: both;
+  display: block;
+  position: relative;
+  width: 30px;
+  line-height: 28px;
+  color: white;
+}
+.cal td a:hover {
+  background: #f3f3f3;
+  color:black;
+}
+.cal td.off a {
+  color: #FFA3A3;
+}
+.cal td.active a, .cal td a:active {
+  color: white;
+  background: #6dafbf;
+  border: 1px solid #598b94;
+}
+.cal td.active:first-child a, .cal td:first-child a:active {
+  border-left: 0;
+  margin-left: 0;
+}
+.cal td.active:last-child a, .cal td:last-child a:active {
+  border-right: 0;
+  margin-right: 0;
+}
+.cal tr:last-child td.active a, .cal tr:last-child td a:active {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+/*-------------------------------------end CALENDAR --------------------------------------*/
+
+/*------------------------------------- RECENT-POSTS and CATEGORIES--------------------------------------*/
+.dropdown{width:100%; height:100%; color:white; background: #BABABA; display: table;}
+.dropdown .drpdwn-title {display: table-cell; width:80%; height:100%; text-align:left; font-size:23px; font-weight: bold; padding-left: 20px; vertical-align: middle;}
+.dropdown .drpdwn-icon {display: table-cell; vertical-align: middle; background:gray; width:20%; height:100%;}
+/*-------------------------------------end RECENT-POSTS and CATEGORIES--------------------------------------*/
+
+/*---------------------------------------POP-COM-RECENT ----------------------------------------------------*/
+#pop-com-recent .tabs-horiz{height:30%; width:100%; background:black; color:white;}
+#pop-com-recent .tabs-horiz ul {height:100%; list-style:none; width:100%;}
+#pop-com-recent .tabs-horiz ul li {
+	width:33.35%;
+	float:left;
+	height:100%;
+	min-height: 60px;
+	display: table;
+}
+#pop-com-recent .tabs-horiz ul li p{
+	display: table-cell;
+	width:100%;
+	vertical-align: middle;
+	text-align: center;
+	min-height: 60px;
+}
+#pop-com-recent .tabbed-content-container-horiz{
+	position: relative;
+	text-align: left;
+    width:100%;
+    height:70%;
+    background: white;
+}
+#pop-com-recent .tabbed-content {
+	position:absolute;
+	margin:5%;
+}
+/*---------------------------------------POP-COM-RECENT ----------------------------------------------------*/

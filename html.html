@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<html>
+<body>
+
+<div id="content-box">
+
+ <!-- columns divs, float left, no margin so there is no space between column, width=1/3 -->
+    <div class="col">
+    	<div id="add-new-post" class="widget">
+    		    <div class="tabs">
+			        <ul>
+			            <li id="tab12" class="vh-center"><p>About Us</p></li>
+			            <li id="tab22" class="vh-center"><p>Our Work</p></li>
+			            <li id="tab32" class="vh-center"><p>Contact</p></li>
+			        </ul>
+			    </div>
+		        <div class="tabbed-content-container">
+		            <div id="item12" class="tabbed-content">
+		                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sem turpis, convallis sed lobortis et, efficitur at orci. Vivamus a porttitor felis, finibus ultricies lectus. Fusce non urna egestas, euismod nunc non, ullamcorper leo. Praesent tempor ornare quam, ac pharetra sapien. Sed tempor elementum egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed quis leo sed augue ullamcorper lobortis. Fusce varius convallis auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		            </div>
+		            <div id="item22" class="tabbed-content">
+		                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum id dolor ac nisi fringilla porta. Vestibulum luctus velit libero, nec elementum dolor pellentesque id. Curabitur id risus tristique metus gravida cursus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris convallis orci in condimentum tincidunt. Suspendisse semper ut nibh sit amet condimentum. Donec vehicula venenatis lacinia. Ut nec ullamcorper mauris. Morbi pretium euismod accumsan. Pellentesque laoreet nisi eget eleifend imperdiet. Duis porta libero massa. Integer efficitur, nunc ut placerat vestibulum, ante mauris scelerisque metus, nec dictum lectus mi non arcu.
+		            </div>
+		            <div id="item32" class="tabbed-content">
+		                Phasellus augue mi, imperdiet pharetra risus vel, tincidunt rutrum dolor. Vivamus fringilla enim ut fermentum fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sed risus et magna finibus luctus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi risus libero, cursus vel vestibulum ac, semper at nibh. Vestibulum nisl lorem, finibus et tortor mattis, rhoncus placerat arcu. Aliquam pellentesque felis non nisl eleifend, vel feugiat nisi lobortis. Sed vestibulum tellus ligula, a pretium elit pellentesque hendrerit. Proin iaculis vel dolor faucibus facilisis. Donec porta efficitur lectus vel sagittis.
+		            </div>
+		        </div>
+    	</div>
+
+    	<div id="action-bar" class="widget">
+    		<div class="icon">
+    			<span class="helper"></span>
+    			<img src="img/speech_bubble.svg">
+    		</div>
+    		<div class="icon">
+    			<span class="helper"></span>
+    			<img src="img/email.svg">
+    		</div>
+    		<div class="icon">
+    			<span class="helper"></span>
+    			<img src="img/heart.svg">
+    		</div>
+    		<div id="search">
+    			<input type="text">
+    		</div>
+    	</div>
+
+    	<div id="subscribe" class="widget">
+    		<div class="title">
+    			<h1>Subscribe</h1>
+    		</div>
+    		<div class="subscribe-form">
+    			<form action="">
+    				<small class="subscribe-cta">Subscribe to receive updates about us.</small><br>
+    				<p>
+		    			<input class="email_txt_field" type="email" name="email-address-for-subscribe" placeholder="e.g. somebody@example.com" value="" />
+		    			<input class="email_submit_btn" type="submit" name="subscribe" value="SUBSCRIBE"/>
+	    			</p>
+    			</form>
+    		</div>
+
+    	</div>
+    </div>
+
+    <div class="col">
+
+    	<div id="related-posts" class="widget">
+            <div class="title">
+                <h1>Related Posts</h1>
+            </div>
+
+            <div class="checkbox-item-container">
+                <div class="checkbox-item">
+                    <div class="text-container">
+                        <h2>Endless pontification on all kinds of things</h2>
+                        <small>by Loudmouth Talker</small>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1"></label>
+                    </div>
+                </div>
+
+                <div class="checkbox-item">
+                    <div class="text-container">
+                        <h2>More edification on additional topics</h2>
+                        <small>by Loudmouth Talker</small>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox2">
+                        <label for="checkbox2"></label>
+                    </div>
+                </div>
+
+                <div class="checkbox-item">
+                    <div class="text-container">
+                        <h2>Further elaborations</h2>
+                        <small>by Loudmouth Talker</small>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="checkbox3">
+                        <label for="checkbox3"></label>
+                    </div>
+                </div>
+            </div>
+    	</div>
+
+    	<div id="tags" class="widget">
+            <div class="title">
+                <h1>Tags</h1>
+            </div>
+
+            <div class="subscribe-form">
+                <form action="">
+                    <p>
+                        <input class="email_txt_field" type="email" name="email-address-for-subscribe" value="" />
+                        <input class="email_submit_btn" type="submit" name="subscribe" value="ADD"/>
+                    </p>
+                    <small class="tag-subtext">Separate tags with commas.</small><br>
+                </form>
+            </div>
+    	</div>
+
+    	<div id="map" class="widget">
+            <div id="map-canvas">
+            </div>
+            <div class="subscribe-form">
+                <form action="">
+                    <p>
+                        <input class="email_txt_field" type="email" name="email-address-for-subscribe" value="" />
+                        <input class="email_submit_btn" type="submit" name="subscribe" value="ADD PIN"/>
+                    </p>
+                </form>
+            </div>
+    	</div>
+
+    </div>
+
+    <div class="col">
+
+    	<div id="calendar" class="widget">
+             <section class="container">
+                <table class="cal">
+                  <caption>
+                    <span class="prev"><a href="index.html">&larr;</a></span>
+                    <span class="next"><a href="index.html">&rarr;</a></span>
+                    January 2012
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th>Mon</th>
+                      <th>Tue</th>
+                      <th>Wed</th>
+                      <th>Thu</th>
+                      <th>Fri</th>
+                      <th>Sat</th>
+                      <th>Sun</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="off"><a href="index.html">26</a></td>
+                      <td class="off"><a href="index.html">27</a></td>
+                      <td class="off"><a href="index.html">28</a></td>
+                      <td class="off"><a href="index.html">29</a></td>
+                      <td class="off"><a href="index.html">30</a></td>
+                      <td class="off"><a href="index.html">31</a></td>
+                      <td><a href="index.html">1</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="index.html">2</a></td>
+                      <td><a href="index.html">3</a></td>
+                      <td><a href="index.html">4</a></td>
+                      <td><a href="index.html">5</a></td>
+                      <td><a href="index.html">6</a></td>
+                      <td><a href="index.html">7</a></td>
+                      <td><a href="index.html">8</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="index.html">9</a></td>
+                      <td><a href="index.html">10</a></td>
+                      <td><a href="index.html">11</a></td>
+                      <td><a href="index.html">12</a></td>
+                      <td><a href="index.html">13</a></td>
+                      <td><a href="index.html">14</a></td>
+                      <td><a href="index.html">15</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="index.html">16</a></td>
+                      <td><a href="index.html">17</a></td>
+                      <td><a href="index.html">18</a></td>
+                      <td><a href="index.html">19</a></td>
+                      <td><a href="index.html">20</a></td>
+                      <td><a href="index.html">21</a></td>
+                      <td><a href="index.html">22</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="index.html">23</a></td>
+                      <td><a href="index.html">24</a></td>
+                      <td><a href="index.html">25</a></td>
+                      <td><a href="index.html">26</a></td>
+                      <td><a href="index.html">27</a></td>
+                      <td class="active"><a href="index.html">28</a></td>
+                      <td><a href="index.html">29</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="index.html">30</a></td>
+                      <td><a href="index.html">31</a></td>
+                      <td class="off"><a href="index.html">1</a></td>
+                      <td class="off"><a href="index.html">2</a></td>
+                      <td class="off"><a href="index.html">3</a></td>
+                      <td class="off"><a href="index.html">4</a></td>
+                      <td class="off"><a href="index.html">5</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+
+    	</div>
+
+    	<div id="recent-posts" class="widget">
+            <div class="dropdown">
+                <p class="drpdwn-title">Recent Posts</p>
+                <p class="drpdwn-icon">&rarr;</p>
+            </div>
+    	</div>
+
+    	<div id="categories" class="widget">
+            <div class="dropdown">
+                <p class="drpdwn-title">Categories</p>
+                <p class="drpdwn-icon">&rarr;</p>
+            </div>
+    	</div>
+
+    	<div id="pop-com-recent" class="widget">
+            <div class="tabs-horiz">
+                <ul>
+                    <li id="tab1"><p>Popular</p></li>
+                    <li id="tab2"><p>Comments</p></li>
+                    <li id="tab3"><p>Recent</p></li>
+                </ul>
+            </div>
+            <div class="tabbed-content-container-horiz">
+                <div id="item1" class="tabbed-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sem turpis, convallis sed lobortis et, efficitur at orci. Vivamus a porttitor felis, finibus ultricies lectus. Fusce non urna egestas, euismod nunc non, ullamcorper leo.
+                </div>
+                <div id="item2" class="tabbed-content">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum id dolor ac nisi fringilla porta. Vestibulum luctus velit libero, nec elementum dolor pellentesque id. Curabitur id risus tristique metus gravida cursus. 
+                </div>
+                <div id="item3" class="tabbed-content">
+                    Phasellus augue mi, imperdiet pharetra risus vel, tincidunt rutrum dolor. Vivamus fringilla enim ut fermentum fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sed risus et magna finibus luctus. 
+            </div>
+    	</div>
+
+    </div>
+</div>
+
+<script src="js.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="maps.js"></script>
+
+</body>
+</html>
